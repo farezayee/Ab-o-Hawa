@@ -4,39 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ab-o-Hawa</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="weather-app">
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Tuesday 14:49, Scattered clouds
-          <br />
-          Humidity: 66%, Wind: 3.13km/h
-        </p>
-      </div>
-      <div>🌥️ 12&degC</div>
-    </main>
-    <footer>
-      this project was codded by
-      <a href="https://github.com/farezayee" target="_blank">Fatima Rezayee</a>
-      is
-      <a href="https://github.com/farezayee/Ab-o-Hawa" target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a href="https://ab-o-hawa.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details">
+              <span id="time">Tuesday 14:49</span>
+              ","
+              <span id="description">Scattered clouds</span>
+              <br />
+              "Humidity: "
+              <strong id="humidity">66%</strong>, "Wind: "
+              <strong id="wind-speed">3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-emoji">🌥️</div>
+            <div class="weather-app-degree" id="temperature">12</div>
+            <div class="weather-app-unit">&degC</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        this project was codded by
+        <a href="https://github.com/farezayee" target="_blank"
+          >Fatima Rezayee</a
+        >
+        is
+        <a href="https://github.com/farezayee/Ab-o-Hawa" target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://ab-o-hawa.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
     </div>
   </body>
 </html>

@@ -67,8 +67,8 @@ main {
   display: flex;
 }
 .weather-emoji {
-  font-size: 44px;
-  margin-top: 22px;
+  width: 88px;
+  height: 88px;
 }
 .weather-app-degree {
   font-size: 88px;
